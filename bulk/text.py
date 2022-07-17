@@ -21,8 +21,8 @@ def bulk_text(path, keywords=None):
         if keywords:
             df['color'] = [determine_keyword(str(t), keywords) for t in df['text']]
             df['alpha'] = [0.4 if c == 'none' else 1 for c in df['color']]
-        else:
-            df['color'] = ['#1a2340' for t in df['text']]
+#         else:
+#             df['color'] = ['#1a2340' for t in df['text']]
         
         highlighted_idx = []
 
